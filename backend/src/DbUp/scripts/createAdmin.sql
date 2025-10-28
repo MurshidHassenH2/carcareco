@@ -1,0 +1,38 @@
+﻿-- Generate a new UUID for the employee
+-- DO $$
+-- DECLARE
+--    employee_id UUID := gen_random_uuid();  -- requires pgcrypto extension
+--    password_hash TEXT := '$2a$11$zsTS62pGn5Cfca4CgqRJxebx45je/3nJj.puxIArFwtAjHew67m6i';
+--    profile_image BYTEA := NULL; -- replace if you have a binary image
+-- BEGIN
+    -- 1️⃣ Insert into domain.employee
+--    INSERT INTO domain.employee (
+--        id, firstname, lastname, email, phone, proffession, description, introducedat
+--    ) VALUES (
+--        employee_id,
+--        'System',
+--        'Administrator',
+--        'admin@example.com',
+--        '',
+--        'Administrator',
+--        'Default system administrator',
+--        CURRENT_TIMESTAMP
+--    );
+
+--    RAISE NOTICE 'Created employee record with ID: %', employee_id;
+
+    -- 2️⃣ Insert into public.user
+--    INSERT INTO public."user" (
+--        username, password, tenantname, email, validated, profile_image, employeeid
+--    ) VALUES (
+--        'admin',
+--        password_hash,
+--        'template',
+--        'admin@example.com',
+--        TRUE,
+--        profile_image,
+--        employee_id
+--    );
+
+--    RAISE NOTICE 'Successfully created default admin user';
+-- END $$;

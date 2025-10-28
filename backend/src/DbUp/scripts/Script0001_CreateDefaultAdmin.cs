@@ -32,7 +32,8 @@ namespace DbUp.Scripts
                 // Create a fallback array so the script doesn't fail
                 profileImage = new byte[0];
             }
-
+            // use this if you don't have it 
+            // e0c07cf9-6618-40d6-a525-eb616ac78b24
             // Generate a default employee ID for the admin
             var employeeId = Guid.NewGuid();
 
