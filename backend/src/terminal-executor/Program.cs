@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using BCrypt.Net;
 
-var userPassword = "1234@hash"; // password entered by user
+var userPassword = "carcare"; // password entered by user
 var storedHash = "$2a$11$zsTS62pGn5Cfca4CgqRJxebx45je/3nJj.puxIArFwtAjHew67m6i"; // hash stored in DB
 bool isValid = BCrypt.Net.BCrypt.Verify(userPassword, storedHash);
 
